@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Number", "Number\Number.csproj", "{B565D5FF-449F-4C6C-ACA8-C0B6A45EC897}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guess", "Guess\Guess.csproj", "{BB2A6513-4E49-4762-A919-F635BFCA9047}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B565D5FF-449F-4C6C-ACA8-C0B6A45EC897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B565D5FF-449F-4C6C-ACA8-C0B6A45EC897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B565D5FF-449F-4C6C-ACA8-C0B6A45EC897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B565D5FF-449F-4C6C-ACA8-C0B6A45EC897}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB2A6513-4E49-4762-A919-F635BFCA9047}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB2A6513-4E49-4762-A919-F635BFCA9047}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB2A6513-4E49-4762-A919-F635BFCA9047}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB2A6513-4E49-4762-A919-F635BFCA9047}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
