@@ -24,27 +24,45 @@ namespace Number
                 return number;
             }
         }
+        public int K
+        {
+            get
+            {
+                return k;
+            }
+        }
 
-       
-        public string NumberEquals(int UserNumber)
+        public bool NumberEquals(int UserNumber)
         {
             if (UserNumber == number)
-                return "You won";
-            
-            else
-                  { if ((UserNumber >= 0) && (UserNumber <= 100))
-                {
-                    if (k <= 1)
-                    {
-                        return null;
-                    }
-                    if (UserNumber < number)
-                    { k--; return "More. Remaining " + k + " attempts"; }
-                    else { k--; return "Less. Remaining " + k + " attempts"; }
-                }
-                else return "incorrect values";
-                  }
+                return true;
+
+            else return false;
+               
+         }
+    
+        
+        public bool Correct(int UserNumber)
+        {
+            if ((UserNumber >= 0) && (UserNumber <= 100))
+             return true;
+             else return false;
+        }
+
+
+        public bool Evaluation(int UserNumber)
+        {
+            k--;
+            if (UserNumber<number)
+                 return true; 
+                else  return false; 
          }
 
+        public bool Attempt(int UserNumber)
+        {
+            if (k > 0)
+                return true;
+            else return false;
+        }
     }
 }

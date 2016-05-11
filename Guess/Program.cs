@@ -13,14 +13,30 @@ namespace Guess
         {
             Console.WriteLine(" Game: Guess the number. Guess a number between 1 and 100 ");
             GNumber v = new GNumber();
-            string s;
+            int number;
             do
             {
-                s = v.NumberEquals(Convert.ToInt32(Console.ReadLine()));
-                Console.WriteLine("" + s);
+                number = Convert.ToInt32(Console.ReadLine());
+
+                if (v.NumberEquals(number))
+                {
+                    Console.WriteLine("You won");
+                    return;
+                }
+                else
+                if (v.Correct(number))
+                {
+                    if (v.Evaluation(number))
+                        Console.WriteLine("More. We have {0} attempt", v.K);
+
+                    else Console.WriteLine("Less. We have {0} attempt", v.K);
+                }
+                else Console.WriteLine("you entered an incorrect number. enter from 1 to 100");
             }
-            while (s!= null);
-            Console.WriteLine("No attempts. You lose. Number is "+v.Number);
+
+            while (v.Attempt(number));
+
+            Console.WriteLine("You lose. Number is " + v.Number);
             Console.ReadKey();
         }
     }
