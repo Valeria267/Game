@@ -9,12 +9,13 @@ namespace Number
     public class GNumber
     {
         private int number;//задуманное число 
-        private int k = 3;
+        private int k;
         
 
         public GNumber()
         {
            this.number = new Random().Next(0,101);
+            k = 3;
         }
 
         public int Number
@@ -34,35 +35,47 @@ namespace Number
 
         public bool NumberEquals(int UserNumber)
         {
-            if (UserNumber == number)
-                return true;
-
-            else return false;
-               
-         }
+            return UserNumber == number;
+        }
     
         
         public bool Correct(int UserNumber)
         {
+            bool result = false;
+
             if ((UserNumber >= 0) && (UserNumber <= 100))
-             return true;
-             else return false;
+            {
+                result = true;
+            }
+           
+
+            return result;
         }
 
 
         public bool Evaluation(int UserNumber)
         {
+            bool result = false;
             k--;
-            if (UserNumber<number)
-                 return true; 
-                else  return false; 
-         }
+
+            if (UserNumber < number)
+            {
+                result = true;
+            }
+          
+
+            return result;
+        }
 
         public bool Attempt(int UserNumber)
         {
+            bool result = false;
             if (k > 0)
-                return true;
-            else return false;
+            {
+                result = true;
+            }
+          
+            return result;
         }
     }
 }

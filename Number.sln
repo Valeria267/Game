@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Number", "Number\Number.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guess", "Guess\Guess.csproj", "{BB2A6513-4E49-4762-A919-F635BFCA9047}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm", "WinForm\WinForm.csproj", "{AFD8BF43-1F61-41DF-99DE-FA56E955D713}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BB2A6513-4E49-4762-A919-F635BFCA9047}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB2A6513-4E49-4762-A919-F635BFCA9047}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB2A6513-4E49-4762-A919-F635BFCA9047}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFD8BF43-1F61-41DF-99DE-FA56E955D713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFD8BF43-1F61-41DF-99DE-FA56E955D713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFD8BF43-1F61-41DF-99DE-FA56E955D713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFD8BF43-1F61-41DF-99DE-FA56E955D713}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
